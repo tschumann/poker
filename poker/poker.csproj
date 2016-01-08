@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="card.cs" />
+    <Compile Include="card\card.cs" />
     <Compile Include="game.cs" />
     <Compile Include="iplayer.cs" />
     <Compile Include="player.cs" />
