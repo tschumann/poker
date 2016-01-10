@@ -1,15 +1,13 @@
 ﻿using System.Collections.Generic;
 
-class Player : IPlayer
+class Player : Card.AbstractCardPlayer
 {
-    private List<Card> hand;
-
     public int bet()
     {
         return 0;
     }
 
-    public Card play()
+    public override Card.Card play()
     {
         return null;
     }
