@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-class Player : Card.AbstractCardPlayer
+class PokerPlayer : Card.AbstractCardPlayer
 {
     public enum HandType
     {
@@ -23,6 +23,11 @@ class Player : Card.AbstractCardPlayer
     public override Card.Card play()
     {
         return null;
+    }
+
+    public override Card.Card swap(Card.Card card)
+    {
+        return card;
     }
 
     public HandType getHandType()
