@@ -1,3 +1,0 @@
-[submodule "poker/csharp-card"]
-	path = poker/csharp-card
-	url = https://github.com/tschumann/csharp-card
