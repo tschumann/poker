@@ -50,6 +50,7 @@
     <Compile Include="csharp-card\Deck.cs" />
     <Compile Include="csharp-card\ICardPlayer.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="PokerCard.cs" />
     <Compile Include="PokerPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
