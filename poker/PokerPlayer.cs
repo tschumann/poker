@@ -20,8 +20,12 @@ class PokerPlayer : Card.AbstractCardPlayer
         return 0;
     }
 
+    /*
+     * With a hand of five cards, decide which to throw and which to keep.
+     */
     public override Card.Card play()
     {
+        // TODO: find any two or more of a kinds, any in order, any of the same suit etc
         return null;
     }
 
