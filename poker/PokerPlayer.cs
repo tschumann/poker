@@ -15,6 +15,10 @@ class PokerPlayer : Card.AbstractCardPlayer
         STRAIGHT_FLUSH,
     }
 
+    public PokerPlayer(Card.IGame game) : base(game)
+    {
+    }
+
     public int bet()
     {
         return 0;

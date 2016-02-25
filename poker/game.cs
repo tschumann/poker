@@ -7,7 +7,7 @@ using Card;
 
 namespace poker
 {
-    class Game
+    class Game : Card.IGame
     {
         protected List<ICardPlayer> players;
 
