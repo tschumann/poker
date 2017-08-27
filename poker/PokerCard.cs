@@ -1,19 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 
-class PokerCard : Card.Card, IComparable
+namespace poker
 {
-    public PokerCard(Suit suit, Rank rank, Card.IGame game) : base(suit, rank, game)
+    public class PokerCard : Card.Card, IComparable
     {
-    }
-
-    public int CompareTo(object obj)
-    {
-        if (((Card.Card)obj).rank == this.rank)
+        public PokerCard(Suit suit, Rank rank, Card.IGame game) : base(suit, rank, game)
         {
-            return 0;
         }
 
-        return 0;
-    }    
+        public int CompareTo(object obj)
+        {
+            if (((Card.Card)obj).rank == this.rank)
+            {
+                return 0;
+            }
+
+            return 0;
+        }    
+    }
 }

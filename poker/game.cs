@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 using Card;
 
 namespace poker
 {
-    class Game : Card.IGame
+    public class Game : Card.IGame
     {
         protected List<ICardPlayer> players;
 
