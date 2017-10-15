@@ -8,7 +8,8 @@ namespace poker_tests
         [TestMethod]
         public void testInstantiate()
         {
-            poker.PokerPlayer player = new poker.PokerPlayer(null);
+            Card.IGame game = new poker.Game();
+            poker.PokerPlayer player = new poker.PokerPlayer(game);
         }
     }
 }
