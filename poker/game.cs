@@ -9,20 +9,38 @@ namespace poker
         private List<ICardPlayer> players;
         private Deck deck;
 
-        public Game()
+        public Game(int players)
         {
-            this.players = new List<ICardPlayer>();
+            this.players = new List<ICardPlayer>(players);
             this.deck = new Deck(this, false);
+
+            for (int i = 0; i < players; i++)
+            {
+                this.players.Insert(i, new PokerPlayer(this));
+            }
         }
 
         public void deal()
         {
             this.deck.shuffle();
 
-            foreach (var player in this.players)
+            for (int i = 0; i < 5; i++)
             {
-                player.receive(this.deck.draw());
+                for (int j = 0; j < this.players.Count; j++)
+                {
+                    this.players[j].receive(this.deck.draw());
+                }
             }
+        }
+
+        public Deck getDeck()
+        {
+            return this.deck;
+        }
+
+        public PokerPlayer getPlayer(int index)
+        {
+            return (PokerPlayer)this.players[index];
         }
         
         static void Main(string[] args)

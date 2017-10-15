@@ -1,4 +1,5 @@
-﻿
+﻿using System.Collections.Generic;
+
 namespace poker
 {
     public class PokerPlayer : Card.AbstractCardPlayer
@@ -37,6 +38,12 @@ namespace poker
         public override Card.Card swap(Card.Card card)
         {
             return card;
+        }
+
+        // TODO: move to parent class?
+        public List<Card.Card> getHand()
+        {
+            return this.hand;
         }
 
         public HandType getHandType()
