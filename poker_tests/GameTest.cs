@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using poker;
 
 namespace poker_tests
 {
@@ -8,7 +9,7 @@ namespace poker_tests
         [TestMethod]
         public void testDeal()
         {
-            poker.Game game = new poker.Game(4);
+            Game game = new Game(4);
             game.deal();
         }
     }

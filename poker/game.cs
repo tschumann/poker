@@ -33,6 +33,11 @@ namespace poker
             }
         }
 
+        public void playGame()
+        {
+            this.deal();
+        }
+
         public Deck getDeck()
         {
             return this.deck;
