@@ -36,6 +36,8 @@ namespace poker
         public void playGame()
         {
             this.deal();
+
+            // TODO: play hands
         }
 
         public Deck getDeck()
